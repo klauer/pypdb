@@ -5,9 +5,10 @@ import sys
 
 from setuptools import setup
 
-setup(name='pyPDB',
+setup(name='epics-pypdb',
           version='0.1',
           description="Utilities for working with EPICS PDB files",
+          long_description="Utilities for working with EPICS PDB files",
           author='Michael Davidsaver',
           author_email='mdavidsaver@gmail.com',
           packages=['pyPDB',
@@ -15,6 +16,5 @@ setup(name='pyPDB',
                     'pyPDB.po',
                    ],
           scripts=['getpvs', 'applypvs', 'dbdlint'],
-          install_requires=
-            ['ply (>=3.4)'],
+          install_requires=['ply (>=3.4)'],
       )
